@@ -1,0 +1,45 @@
+{
+  "name": "serverless-slack-dickbott",
+  "version": "0.0.1",
+  "description": "Serverless slack bot using dickbott framework",
+  "main": "dist",
+  "typings": "dist",
+  "scripts": {
+    "test": "mocha -r ts-node/register \"test/**/*.ts\"",
+    "link": "yalc add",
+    "rm-link": "yalc remove",
+    "push": "yalc push",
+    "start": "tsc -w",
+    "build": "tsc",
+    "test-watch": "mocha -r ts-node/register --watch --watch-extensions ts,tsx \"test/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gualtierim/serverless-slack-dickbott.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gualtierim/serverless-slack-dickbott/issues"
+  },
+  "homepage": "https://github.com/gualtierim/serverless-slack-dickbott#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.3",
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typemoq": "^2.1.0",
+    "typescript": "^3.3.3333",
+    "yalc": "^1.0.0-pre.24"
+  },
+  "dependencies": {
+    "@types/reflect-metadata": "^0.1.0",
+    "aws-lambda": "^0.1.2",
+    "dickbott": "^0.9.0",
+    "inversify": "^5.0.1",
+    "lodash": "^4.17.11",
+    "reflect-metadata": "^0.1.13",
+    "serverless-slack": "^1.0.26"
+  }
+}
